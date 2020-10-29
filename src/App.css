@@ -1,0 +1,293 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 70vmin;
+}
+
+.App-S_logo {
+  height: 70vmin;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-S_logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-start {
+  border: 1px solid;
+  display: inline-block;
+  /* cursor: pointer; */
+  font-family: Arial;
+  font-size: 17px;
+  padding: 6px 101px;
+  text-decoration: none;
+  color: #fc0000;
+  border-radius: 50px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.global_menu {
+  width: 55px;
+  background-color: #2cbbb6;
+  padding: 22px 0px;
+  box-sizing: border-box;
+}
+
+/* 새 퍼덕거리던데 난 못하것다 */
+.bird--one {
+  animation-duration: 1s;
+  animation-delay: -0.5s;
+}
+.bird--two {
+  animation-duration: 0.9s;
+  animation-delay: -0.75s;
+}
+
+/* 메인도넛 */
+.d-chasing1 {
+  width: 71px;
+  height: 60vmin;
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 150px;
+  left: 10%;
+  animation: ani 4s infinite 10s alternate;
+  animation: App-logo-spin infinite 5s linear;
+}
+.d-chasing2 {
+  width: 90px;
+  height: 100vmin;
+  bottom: 800px;
+  transform: translateX(-30%);
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  animation: ani 1s infinite 20s alternate;
+  animation: App-logo-spin infinite 3s linear;
+}
+.d-chasing3 {
+  width: 120px;
+  height: 120vmin;
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 60px;
+  left: 20%;
+  animation: ani 1s infinite 8s alternate;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+/* 얘로 실험해보장 */
+.d-chasing4 {
+  width: 100%;
+  height: 50px;
+  bottom: 800px;
+  transform: rotate(45, 50, 100);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: ani 1s infinite 8s alternate;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+/* 박쥐쓰 */
+.bat1-box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+/* #bat1 {
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 20s linear;
+} */
+@keyframes ani {
+  bottom: 1px;
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 10px);
+  }
+}
+
+/* 이미지 두 개 겹치기 시도 */
+.container {
+  width: 630px;
+  margin: 100px auto 0;
+}
+.box {
+  float: left;
+  width: 255px;
+  height: 515px;
+  margin: 0 30px;
+  position: relative;
+}
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+}
+
+/* S_bat */
+/* App-S_logo 에서 속도만 존나게 빨리 */
+.App-S_bat1 {
+  height: 70vmin;
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 2s alternate;
+}
+/* 
+@media (prefers-reduced-motion: no-preference) {
+  .App-S_bat1 {
+    animation: App-logo-spin infinite 3s linear;
+  }
+} */
+
+/* wicked 초록색 빤짝이들 */
+.App-S_wicked1 {
+  width: 30px;
+  height: 70vmin;
+  bottom: 800px;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 100px;
+  left: 27550%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+.App-S_wicked2 {
+  width: 50px;
+  height: 80vmin;
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 180px;
+  left: 14110%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+.App-S_wicked3 {
+  width: 15px;
+  height: 70vmin;
+  bottom: 210px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 3s alternate;
+}
+
+.App-S_wicked4 {
+  width: 20px;
+  height: 20vmin;
+  bottom: 800px;
+  transform: translateX(-20%);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: ani 3s infinite 10s alternate;
+  pointer-events: auto;
+  animation: App-logo-spin infinite 2s linear;
+}
+
+/* form bat 하려다가 다른곳에다가^_^; */
+/* .svg-box {
+  position: relative;
+  width: 100%%%;
+  height: 550px;
+}
+#bat1 {
+  bottom: 700px;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  animation: ani 1s infinite alternate;
+}
+@keyframes ani {
+  bottom: 1px;
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 10px);
+  }
+} */
+
+/* 뿅뿅도넛 */
+.wrap {
+  text-align: center;
+  margin-top: 20px;
+}
+.d-form {
+  width: 200px;
+  height: 40vmin;
+  transform: translateX(43%);
+  animation: motion 0.5s linear 0s infinite alternate;
+  /* margin-top: 0; */
+  
+}
+.d-main {
+  width: 66px;
+  height: 40vmin;
+  transform: translateX(176%);
+  animation: motion 0.6s linear 0s infinite alternate;
+  /* margin-top: 0; */
+}
+
+@keyframes motion {
+  40% {
+    margin-top: 30px;
+  }
+  10% {
+    margin-top: 0px;
+  }
+}
